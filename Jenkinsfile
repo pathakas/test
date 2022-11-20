@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'mvn clean package'
-                docker.build("vigneshsweekaran/hello-world:${TAG}")
+                sh aws version
             }
         }
         stage('Test') {
