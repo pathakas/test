@@ -6,7 +6,6 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'mvn clean package'
-                aws --version
             }
         }
         stage('Test') {
